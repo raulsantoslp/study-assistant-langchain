@@ -1,0 +1,130 @@
+version: 1
+name: "AI Study Assistant (LangChain TS)"
+description: "A learning project to practice LangChain.js and TypeScript by building a study assistant that summarizes PDFs and quizzes the user."
+milestones:
+  - title: "Setup & Planning"
+    description: "Initialize project structure and test LLM connection."
+  - title: "Document Loading"
+    description: "Implement document loaders, text splitters, and embeddings."
+  - title: "RAG Pipeline"
+    description: "Create the retrieval-augmented generation chain."
+  - title: "Conversational Memory"
+    description: "Add memory to maintain context across conversations."
+  - title: "Quiz Generator"
+    description: "Generate quizzes and evaluate answers."
+  - title: "UI & Integration"
+    description: "Frontend and API integration for interaction."
+  - title: "Stretch Goals"
+    description: "Persistence, voice, and analytics extensions."
+
+labels:
+  - name: "langchain"
+    color: "5319e7"
+  - name: "typescript"
+    color: "3178c6"
+  - name: "frontend"
+    color: "0e8a16"
+  - name: "backend"
+    color: "d93f0b"
+  - name: "enhancement"
+    color: "84b6eb"
+  - name: "stretch"
+    color: "f9d71c"
+
+issues:
+  - title: "Define project scope and main features"
+    milestone: "Setup & Planning"
+    labels: ["backend"]
+  - title: "Initialize Node.js + TypeScript project"
+    milestone: "Setup & Planning"
+    labels: ["typescript"]
+  - title: "Install LangChain, dotenv, and OpenAI SDK"
+    milestone: "Setup & Planning"
+    labels: ["langchain"]
+  - title: "Set up .env and API key loader"
+    milestone: "Setup & Planning"
+    labels: ["backend"]
+  - title: "Test basic LLMChain call"
+    milestone: "Setup & Planning"
+    labels: ["langchain"]
+
+  - title: "Implement PDF loader"
+    milestone: "Document Loading"
+    labels: ["backend"]
+  - title: "Split text with RecursiveCharacterTextSplitter"
+    milestone: "Document Loading"
+    labels: ["langchain"]
+  - title: "Store chunks in MemoryVectorStore"
+    milestone: "Document Loading"
+    labels: ["langchain"]
+  - title: "Test embedding + retrieval manually"
+    milestone: "Document Loading"
+    labels: ["langchain"]
+
+  - title: "Create retriever from vector store"
+    milestone: "RAG Pipeline"
+    labels: ["langchain"]
+  - title: "Implement RetrievalQAChain"
+    milestone: "RAG Pipeline"
+    labels: ["langchain"]
+  - title: "Build prompt template for summaries"
+    milestone: "RAG Pipeline"
+    labels: ["langchain"]
+  - title: "Inject retrieved text into prompts"
+    milestone: "RAG Pipeline"
+    labels: ["langchain"]
+  - title: "Test Q&A with sample questions"
+    milestone: "RAG Pipeline"
+    labels: ["langchain"]
+
+  - title: "Add conversational BufferMemory"
+    milestone: "Conversational Memory"
+    labels: ["langchain"]
+  - title: "Combine memory + retrieval into one chain"
+    milestone: "Conversational Memory"
+    labels: ["langchain"]
+  - title: "Experiment with memory strategies"
+    milestone: "Conversational Memory"
+    labels: ["langchain"]
+  - title: "Test multi-turn conversations"
+    milestone: "Conversational Memory"
+    labels: ["langchain"]
+
+  - title: "Generate 5 multiple-choice questions"
+    milestone: "Quiz Generator"
+    labels: ["langchain"]
+  - title: "Add answer evaluation logic"
+    milestone: "Quiz Generator"
+    labels: ["backend"]
+  - title: "Chain quiz results into summary"
+    milestone: "Quiz Generator"
+    labels: ["langchain"]
+  - title: "Use structured prompts for quizzes"
+    milestone: "Quiz Generator"
+    labels: ["langchain"]
+
+  - title: "Create React frontend (Vite or Next.js)"
+    milestone: "UI & Integration"
+    labels: ["frontend"]
+  - title: "Set up Express or LangServe API endpoints"
+    milestone: "UI & Integration"
+    labels: ["backend"]
+  - title: "Add chat interface for summaries & quizzes"
+    milestone: "UI & Integration"
+    labels: ["frontend"]
+  - title: "Implement file upload for PDFs"
+    milestone: "UI & Integration"
+    labels: ["frontend"]
+
+  - title: "Integrate Supabase/Pinecone for persistent storage"
+    milestone: "Stretch Goals"
+    labels: ["stretch"]
+  - title: "Support multiple documents and topics"
+    milestone: "Stretch Goals"
+    labels: ["stretch"]
+  - title: "Add text-to-speech for summaries"
+    milestone: "Stretch Goals"
+    labels: ["stretch"]
+  - title: "Track study performance analytics"
+    milestone: "Stretch Goals"
+    labels: ["stretch"]
